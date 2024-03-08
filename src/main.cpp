@@ -41,4 +41,5 @@ void loop() {
         data.compute_checksum();
         Serial1.write(data.get_raw_data().data(), DataPacket::LENGTH);
     }
+    delay(100);
 }
