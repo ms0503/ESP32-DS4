@@ -19,6 +19,7 @@ void setup() {
 void loop() {
     if(PS4.isConnected()) {
         PS4.setLed(0x00, 0x00, 0xff);
+        PS4.sendToController();
         DataPacket data;
         data.set_bit(DataPacket::TOUCHPAD, PS4.Touchpad());
         data.set_bit(DataPacket::PS_LOGO, PS4.PSButton());
