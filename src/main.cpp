@@ -80,20 +80,7 @@ void loop() {
         );
         data.compute_checksum();
         Serial1.write(data.get_raw_data().data(), DataPacket::LENGTH);
-        Serial.printf(
-            "Send data: [%02x, %02x, %02x, %02x, %02x, %02x, %02x, %02x, "
-            "%02x, %02x]",
-            data.get_raw_data().at(0),
-            data.get_raw_data().at(1),
-            data.get_raw_data().at(2),
-            data.get_raw_data().at(3),
-            data.get_raw_data().at(4),
-            data.get_raw_data().at(5),
-            data.get_raw_data().at(6),
-            data.get_raw_data().at(7),
-            data.get_raw_data().at(8),
-            data.get_raw_data().at(9)
-        );
+        Serial.printf("Send data: %s\n", data.to_string().c_str());
     }
     delay(100);
 }
