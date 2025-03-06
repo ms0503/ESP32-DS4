@@ -3,5 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/lib/PS4-esp32" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lib/esp32-ps3" vcs="Git" />
   </component>
 </project>
